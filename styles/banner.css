@@ -1,0 +1,44 @@
+.banner{
+    height: 70vh; /*vh similar al porcentaje de lo que ocupara en la pantalla viewport*/
+   
+    align-content: center;
+    position:relative;
+    .bold{
+        font-weight: 700;
+    }
+    .content{
+        text-align: center;
+        z-index: 1;
+        position: relative;
+    }
+    .image{
+        background-image: url(../assets/mobilescreen.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.3;
+    }
+}
+
+@media screen and (width> 768px) {
+   .banner{
+        .image{
+            background-image: url(../assets/halfscreen.jpeg);
+        } 
+    }
+}
+
+@media screen and (width> 1024px) {
+   .banner{
+        .image{
+            background-image: url(../assets/fullscreen.jpeg);
+        }
+    
+   }
+}
+
+

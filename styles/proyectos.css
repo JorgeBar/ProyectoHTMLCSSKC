@@ -1,0 +1,60 @@
+
+body{
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+}
+h2{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.distopias{
+    width: 90%;
+    margin: 0 auto;
+    
+    max-width: 800;
+    img{
+        width: 100%;
+    }
+    figure div{
+        max-height: 200px ;
+        overflow: hidden;
+    }
+    figcaption{
+        text-align: center;
+        font-weight: bold;
+    }
+    .list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) ;
+        figure{
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (width > 768px) {
+    .distopias .list{
+        grid-template-columns: repeat(2,1fr);
+    div{
+        height: 100%;
+    }
+}
+    
+}
+
+
+@media screen and (width > 1024px) {
+    .distopias .list{
+        grid-template-columns: repeat(3,1fr);
+    }figure div{
+        height: 200px;
+    }
+    figcaption{
+        margin:0px;
+    }
+    
+}
