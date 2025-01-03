@@ -1,0 +1,34 @@
+.footer{
+    margin: 0px;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    max-height: 100px;
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+    margin: 10px;
+  .enlaces{
+    display: flex;
+    justify-content: center;
+    gap:20px
+    }img{
+      width: 2em;
+      transition: 0.3s ease-in-out;
+      
+      
+    }
+    img:hover{
+      animation: slightly 2s ease-in-out alternate ;
+      cursor: pointer;
+    }
+   
+}
+@keyframes slightly{
+  0%{
+    width: 2em;
+  }
+  50%{
+    width: 2.5em ;
+  }
+
+}
